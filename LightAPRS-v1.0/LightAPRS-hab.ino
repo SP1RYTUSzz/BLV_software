@@ -31,7 +31,7 @@
 //#define DEVMODE // Development mode. Uncomment to enable for debugging.
 
 //****************************************************************************
-char  CallSign[7]="AF1TD"; //DO NOT FORGET TO CHANGE YOUR CALLSIGN
+char  CallSign[7]="AF1TD "; //DO NOT FORGET TO CHANGE YOUR CALLSIGN. Pad with trailing spaces to fill out all 6 chars.
 int   CallNumber=11; //SSID http://www.aprs.org/aprs11/SSIDs.txt
 char  Symbol='O'; // '/O' for balloon, '/>' for car, for more info : http://www.aprs.org/symbols/symbols-new.txt
 bool alternateSymbolTable = false ; //false = '/' , true = '\'
