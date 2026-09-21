@@ -38,7 +38,7 @@ bool alternateSymbolTable = false ; //false = '/' , true = '\'
 
 char Frequency[9]="144.3900"; //default frequency. 144.3900 for US, 144.8000 for Europe
 
-char comment[50] = "http://www.lightaprs.com"; // Max 50 char
+char comment[50] = "https://linktr.ee/broncospace"; // Max 50 char
 char StatusMessage[50] = "HIBAL CubeSats mission from BroncoSpace :)"; 
 //*****************************************************************************
 
