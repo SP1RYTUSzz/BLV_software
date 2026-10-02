@@ -1,4 +1,4 @@
-# CubeSatLink Flight Transceiver Node (Summit)
+# CubeSatLink Flight Transceiver Node (Summit) V3
 # Connect to antenna before plug any power in
 # Author: Tri Do
 
@@ -41,7 +41,7 @@ rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, RADIO_FREQ_MHZ, agc = True)
 # rfm9x post-config
 rfm9x.enable_crc = True
 rfm9x.tx_power = 23
-rfm9x.spreading_factor = 7
+rfm9x.spreading_factor = 9
 rfm9x.coding_rate = 6
 rfm9x.signal_bandwidth = 125000
 rfm9x.ack_delay = 0.1		# set delay before sending ACK
