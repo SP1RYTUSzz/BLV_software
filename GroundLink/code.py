@@ -1,4 +1,4 @@
-# CubeSatLink Ground Node (GroundStation)
+# CubeSatLink Ground Node (GroundStation) V3
 # Connect to antenna before plug any power in
 # Author: Tri Do
 #
@@ -41,7 +41,7 @@ rfm9x = adafruit_rfm9x.RFM9x(spi_rf, CS_RFM, RESET, RADIO_FREQ_MHZ, agc = True)
 # Radio post-init config
 rfm9x.tx_power = 23
 rfm9x.signal_bandwidth = 125000
-rfm9x.spreading_factor = 7		#higher = lower bitrate
+rfm9x.spreading_factor = 9		#higher = lower bitrate
 rfm9x.coding_rate = 6
 rfm9x.enable_crc = True	# enable CRC checking
 rfm9x.ack_delay = 0.1	# set delay before transmitting ACK (seconds)
