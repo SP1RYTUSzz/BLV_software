@@ -1,7 +1,6 @@
-// This is in the GitHub Repo https://github.com/SP1RYTUSzz/BLV_software
+// Project GitHub Repo https://github.com/SP1RYTUSzz/BLV_software
 // Modified by Tri Do
 // Installation (W2.0 version): https://github.com/lightaprs/LightAPRS-W-2.0 
-
 
 #include <Arduino.h>
 #include <SPI.h>
@@ -51,7 +50,7 @@ char    Symbol='O'; // 'O' for balloon, '>' for car, for more info : http://www.
 bool    alternateSymbolTable = false ; //false = '/' , true = '\'
 
 char    comment[50] = "LightAPRS-W 2.0";// Max 50 char
-char    StatusMessage[50] = "High-Altitude BalloonSats. BroncoSTAR.";
+char    StatusMessage[50] = "Hi-Alt BalloonSats from CPP Bronco STAR";
 
 uint32_t GEOFENCE_APRS_frequency      = 144390000 ;//default frequency before geofencing. This variable will be updated based on GPS location.
 int32_t APRS_Freq_Correction          = -1200;     //Hz. vctcxo frequency correction for si4463
@@ -67,7 +66,7 @@ float     HighVolt=6.0; //GPS is always on if the voltage exceeds this value to 
 
 //******************************  HF (WSPR) CONFIG *************************************
 
-char hf_call[7] = "NOCALL";// DO NOT FORGET TO CHANGE YOUR CALLSIGN
+char hf_call[7] = "AF1TD ";// DO NOT FORGET TO CHANGE YOUR CALLSIGN
 
 //#define WSPR_DEFAULT_FREQ       10140200UL //30m band
 #define WSPR_DEFAULT_FREQ       14097100UL //20m band
