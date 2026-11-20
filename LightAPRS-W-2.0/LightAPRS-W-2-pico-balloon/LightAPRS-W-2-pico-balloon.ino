@@ -57,11 +57,11 @@ int32_t APRS_Freq_Correction          = -1200;     //Hz. vctcxo frequency correc
 
 //*****************************************************************************
 
-uint16_t  BeaconWait=50;  //seconds sleep for next beacon (HF or VHF). This is an optimized value, do not change this if possible.
+uint16_t  BeaconWait=30;  //seconds sleep for next beacon (HF or VHF). This is an optimized value, do not change this if possible.
 uint16_t  BattWait=60;    //seconds sleep if super capacitors/batteries are below BattMin (important if power source is solar panel) 
-float     BattMin=3.3;    // min Volts to wake up.
-float     GpsMinVolt=4.5; //min Volts for GPS to wake up. (important if power source is solar panel) 
-float     WsprBattMin=4.0;//min Volts for HF (WSPR) radio module to transmit (TX) ~10 mW
+float     BattMin=3.2;    // min Volts to wake up.
+float     GpsMinVolt=3.0; //min Volts for GPS to wake up. (important if power source is solar panel) 
+float     WsprBattMin=6.0;//min Volts for HF (WSPR) radio module to transmit (TX) ~10 mW
 float     HighVolt=6.0; //GPS is always on if the voltage exceeds this value to protect solar caps from overcharge
 
 //******************************  HF (WSPR) CONFIG *************************************
